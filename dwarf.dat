@@ -1,0 +1,6 @@
+; Dwarf, by A.K. Dewdney (modified to start at 0)
+ADD #4, 3  ; add 4 to the b field of the dat statement
+MOV 2, @2  ; move the dat statement to the location in its b field
+JMP -2     ; jump back to the beginning
+DAT #0, #0 ; the dat bomb
+

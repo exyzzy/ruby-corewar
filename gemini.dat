@@ -1,0 +1,12 @@
+; Gemini, by A.K. Dewdney (modified to start at 0)
+MOV @9, @10		; copy source to destination
+CMP 8, #1		; if all 11 lines have been copied
+JMP 4			; then leave the loop
+ADD #1, 6		; otherwise increment the source address
+ADD #1, 6		; and the destination address
+JMP -5			; and return to the loop
+MOV #-9, 102	; restore the source address in the new copy
+MOV #89, 102	; restore the destination address in the new copy
+JMP 91			; jump to the new copy
+DAT #0, #-9		; pointer to the source address
+DAT #0, #89		; pointer to the destination address

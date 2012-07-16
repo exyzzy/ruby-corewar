@@ -1,0 +1,5 @@
+; Half Imp Gate, by Eric Lang
+; (real imp gate needs to be executed in one cycle)
+MOV 2, -10		; data bomb -10
+JMP -1			; do it again (in this cycle the gate is vulnerable)
+DAT #0, #0		; the bomb

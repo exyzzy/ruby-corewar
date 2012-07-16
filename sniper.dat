@@ -1,0 +1,8 @@
+; Sniper, by Eric Lang - wins 100% vs. imp with 2 shots
+MOV 6, -10		; set up the tripwire
+CMP -11, 5		; has the tripwire been tampered with?
+JMP	-1			; go back to the tripwire check
+MOV 3, -12		; bomb the location after the fence, assuming the imp advanced 1
+MOV 2, -11		; bomb the cycle opening, assuming the imp advanced 3
+JMP -5			; reset the tripwire
+DAT #85, #86	; the tripwire/bomb, with unique ID

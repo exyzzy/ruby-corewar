@@ -1,0 +1,13 @@
+; Test2, by Eric Lang
+; to test more redcode instructions, run against jmp.dat
+ADD #1, #2
+CMP -1, #3
+JMP 2
+JMP 7		; error
+SUB #9, #10
+CMP -1, #1
+JMP 2
+JMP 2		; error
+DJZ 2, -4
+DAT #0, #0	; error
+MOV 0, 1 ; turn into imp if successful

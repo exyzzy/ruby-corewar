@@ -1,0 +1,2 @@
+; Imp, by A. K. Dewdney
+Mov 0, 1 ; Copy this instruction forward 1
